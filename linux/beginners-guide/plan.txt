@@ -1,0 +1,19 @@
+what is linux?
+
+is linux for you?
+
+getting started with linux: choosing a distro
+
+installing linux mint
+
+taking a closer look at linux mint
+
+(stuff to do in linux mint)
+
+alternative programs
+
+installing steam and setting up proton
+
+a closer look at proton
+
+taking a look at lutris
