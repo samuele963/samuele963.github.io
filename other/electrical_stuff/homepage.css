@@ -11,6 +11,14 @@ body {
   margin-right: auto;
 }
 
+ul {
+  padding-inline-start: 20px;
+}
+
+img {
+  padding-inline-start: 10px;
+}
+
 /* Top navigation bar */
 .topnav {
   overflow: hidden;
