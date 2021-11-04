@@ -11,6 +11,11 @@ body {
   margin-right: auto;
 }
 
+table, th, td {
+  border:1px solid black;
+  font-size: large;
+}
+
 /* Top navigation bar */
 .topnav {
   overflow: hidden;
