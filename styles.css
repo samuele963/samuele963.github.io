@@ -1,7 +1,7 @@
 html {
   padding-left: 8px;
   padding-right: 8px;
-  padding-bottom: 18px;
+  padding-bottom: 16px;
 }
 
 body {
@@ -53,4 +53,15 @@ table, th, td {
 
 .content a:visited {
   color: #d1b3ff;
+}
+
+/* Better layout on mobile devices */
+@media screen and (max-width: 600px) {
+  html {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  body {
+    font-size: large;
+  }
 }
