@@ -5,7 +5,7 @@ html {
 
 body {
   background-image: url("background1.png");
-  max-width: 900px;
+  max-width: 750px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -57,10 +57,16 @@ img {
   color: #d1b3ff;
 }
 
+/* Thumbnails */
+.thumbnails {
+  width: 75px;
+  height: 75px;
+}
+
 /* Buttons */
 .buttons {
   text-align: center;
-  max-width: 800px;
+  max-width: 700px;
   display: block;
   margin-left: auto;
   margin-right: auto;
