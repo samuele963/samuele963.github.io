@@ -5,7 +5,7 @@ html {
 
 body {
   background-image: url("background1.png");
-  max-width: 750px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -24,7 +24,7 @@ img {
   background-color: #84e0cb;
 }
 
-/* Topnav links */
+/* Topnav (navigation bar) links */
 .topnav a {
   float: left;
   display: block;
@@ -66,7 +66,7 @@ img {
 /* Buttons */
 .buttons {
   text-align: center;
-  max-width: 700px;
+  max-width: 650px;
   display: block;
   margin-left: auto;
   margin-right: auto;
