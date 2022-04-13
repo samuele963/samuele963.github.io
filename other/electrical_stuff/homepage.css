@@ -5,7 +5,7 @@ html {
 
 body {
   background-color: #acabab;
-  background-image: url("plugpixelated5.png");
+  background-image: url("background.png");
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -61,6 +61,11 @@ img {
 .maincontent {
   background-color: #1c87a7;
   padding-bottom: 8px;
+}
+
+/* Thumbnails */
+.thumbnails {
+  height: 80px;
 }
 
 /* Better layout on mobile devices */
