@@ -19,22 +19,116 @@
 
 <div class="content">
   <h2>Electrical safety around the world</h2>
-  <p></p>
+  <p>
+    This page documents the safety features found in modern-day electrical items, how they function, and the dangers posed
+    by older or non-compliant items which lack these features.
+  </p>
+  <p>
+    Note that, ideally, all of these protections should be present regarardless of the voltage in use inside a specific
+    country: mains voltage, be it 100 or 240 volts, can and will kill you and shouldn't be used as an excuse to be
+    careless in the design of an electrical system.
+  </p>
+  <p>
+    This is a more general overview of various safety features found around the world; a <a href="safety.html">separate page</a>
+    is present to document the evolution of electrical safety in Italy specifically.
+  </p>
 
   <h3>Physical design of plugs and sockets</h3>
+  <h4>Dangers present in older items</h4>
+  <p>
+    The plugs shown below are an example of the dangers presented in older electrical items:
+  </p>
+  <a href="images/safety/problem_01.jpg"><img src="images/safety/problem_01.jpg" height="140"></a>
+  <a href="images/safety/problem_02.jpg"><img src="images/safety/problem_02.jpg" height="140"></a>
+  <!-- <a href=""><img src="" height="140"></a> -->
+  <p>
+    <b>1.</b>
+    Old socket with exposed metal contacts. It is trivially easy to touch the metal contacts inside, and thus receive
+    an electric shock, simply by using a finger or an item made of metal.
+  </p>
+  <p>
+    <b>2.</b>
+    Partially inserted plug; the pins are already making contact and thus live, but a significant portion of them is
+    still exposed and very easy to touch when inserting a plug, especially if not looking.
+  </p>
+
   <h4>Safety shutters on power sockets</h4>
+  <p>
+    Safety shutters as found on power outlets prevent someone from coming in contact with a live contact, even if
+    using some sort of metal object like a screwdriver. They also prevent someone from inserting only one pin inside
+    a socket and thus making the other one live.
+  </p>
+  <p>
+    The adoption of shutters isn't universal even within Europe, however they'll generally be found in power strips
+    and extension cords, and they're mandatory in a few countries such as Italy.
+    In the US sockets with them have recently started being mandatory on new builds, and they're referred to as TR
+    (tamper-resistant), although they're not common on power strips or extension leads.
+  </p>
+  <a href="images/vintage/old_socket_21a.jpg"><img src="images/vintage/old_socket_21a.jpg" height="140"></a>
+  <a href="images/foreign/french_powerstrip_01a.jpg"><img src="images/foreign/french_powerstrip_01a.jpg" height="140"></a>
+  <p>
+    Shutter mechanisms can work in various ways, but the key feature found in all of them is that an electric shock
+    should only be possible if using two objects: one to open the shutters and one to actually reach the live contacts.
+    <br>
+    Three different types of shutter mechanisms are shown here, each functioning in a slightly different way:
+  </p>
   <a href="images/safety/shutters_01.jpg"><img src="images/safety/shutters_01.jpg" height="140"></a>
   <a href="images/safety/shutters_02.jpg"><img src="images/safety/shutters_02.jpg" height="140"></a>
   <a href="images/safety/shutters_03.jpg"><img src="images/safety/shutters_03.jpg" height="140"></a>
-  <!-- <a href=""><img src="" height="140"></a> -->
+  <p>
+    The operation mode of all of these is the same: the two pins of the plug will open the shutters if pushed at the
+    same time, while a single object wouldn't be able to make them open due to friction.
+  </p>
+  <p>
+    The main difference between the three mechanisms is the way the shutters move once a plug is inserted: in the first
+    one they simply rotate to the side, while on the second and third one they slide either to the side or downwards.
+  </p>
+  <p>
+    A different style of shutter mechanism is in use on certain 3-pin plugs and sockets, namely the UK ones (BS1363),
+    where this is required, and in modern-day BS546 ones, but also on some Australian-style sockets found in China,
+    where they're only used for devices that require an earth connection.
+  </p>
+  <!-- image -->
+  <p>
+    This style of mechanism is technically better, as if someone were to get a shock they'd be in contact between live
+    and earth, allowing an RCD to trip. However, it also means that all plugs have to have an earth pin, even if it's
+    not required by the device, which can make the plugs bulky.
+  </p>
+  <p>
+    Notably, some higher-end British sockets use both styles of mechanism, with the shutters only opening if the earth
+    pin is in place and then by the simultaneous push of both the live and neutral pins.
+  </p>
 
   <h4>Sleeved pins or recessed sockets</h4>
+  <p></p>
   <a href="images/safety/sleeved_pins_01.jpg"><img src="images/safety/sleeved_pins_01.jpg" height="140"></a>
   <a href="images/safety/sleeved_pins_02.jpg"><img src="images/safety/sleeved_pins_02.jpg" height="140"></a>
   <a href="images/safety/socket_recessed_01.jpg"><img src="images/safety/socket_recessed_01.jpg" height="140"></a>
 
+  <h3>Circuit design and other features</h3>
+  <h4>Protective earth (ground) connection</h4>
+  <p>
+    This important safety feature ensures that, if due to some fault the chassis of a metal-cased appliance becomes
+    live, the fuse or breaker (or an <a href="#rcd">RCD</a>, for low-impedance faults) will trip, thus preventing
+    someone from coming in contact with the live appliance and risking a potentially fatal shock.
+  </p>
+
+  <!--<h4>Double insulation</h4>
+  <p></p>
+
+  <h4>Fuses and breakers</h4>
+  <p></p>
+
+  <h4>Recessed contacts and live parts</h4>
+  <p></p>-->
+
   <h3>Additional protection</h3>
-  <h4>Residual Current Device (RCD) / Ground Fault Circuit Interrupter (GFCI)</h4>
+  <p>
+    Additional protection is named that way because it's in addition to all the other ways to protect a user from
+    electric shocks, and shouldn't be the only form of protection.
+  </p>
+  <h4 id="rcd">Residual Current Device (RCD) / Ground Fault Circuit Interrupter (GFCI)</h4>
+  <p></p>
   <a href="images/safety/rcd_01.jpg"><img src="images/safety/rcd_01.jpg" height="140"></a>
   <a href="images/fuseboxes/rcd_01a.jpg"><img src="images/fuseboxes/rcd_01a.jpg" height="140"></a>
   <a href="images/foreign/american/gfci_01a.jpg"><img src="images/foreign/american/gfci_01a.jpg" height="140"></a>
@@ -42,43 +136,7 @@
   <h3>Potential hazards</h3>
   <h4>Dangerous adaptors</h4>
   <a href="images/safety/problem_03.jpg"><img src="images/safety/problem_03.jpg" height="140"></a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!--<h3>Plug design:</h3>
-  <h4>Shutters</h4>
-  <h4>Sleeved pins and recessed sockets</h4>
-  <h4>Recessed contacts</h4>
-
-  <h3>Circuit design:</h3>
-  <h4>Earth</h4>
-  <h4>Fuses and breakers</h4>
-
-  <h3>Additional protection:</h3>
-  <h4>RCDs and GFCIs</h4>
-
-  <h3>Potential hazards:</h3>
-  <h4>Dangerous adaptors</h4>
-  <h4>Using the wrong socket</h4>
-  <h4>Swapping fuse sizes</h4>
-
-  <p>More info about the history of electrical safety in Italy can be found <a href="safety.html">here</a>.</p>-->
+  <!-- Using the wrong type of socket, swapping fuse sizes, older installations -->
 
 </div>
 
