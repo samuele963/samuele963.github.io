@@ -5,7 +5,7 @@
   <title>Safety</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="How the design of electrical items evolved over time as safety standards improved, and the various ways in which this has been implemented.">
+  <meta name="description" content="The evolution of electrical safety standards over time, how these features work, and the various ways in which they've been implemented.">
   <meta name="author" content="samuele963">
   <link rel="stylesheet" href="../../styles.css">
   <link rel="icon" type="image/png" href="favicon.png">
@@ -39,15 +39,16 @@
     The plugs shown below are an example of the dangers commonly present in older electrical items:
   </p>
   <a href="images/vintage/old_socket_24a.jpg"><img src="images/vintage/old_socket_24a.jpg" height="140"></a>
+  <a href="images/safety/problem_01.jpg"><img src="images/safety/problem_01.jpg" height="140"></a>
   <a href="images/safety/problem_02.jpg"><img src="images/safety/problem_02.jpg" height="140"></a>
   <!-- <a href=""><img src="" height="140"></a> -->
   <p>
-    <b>1.</b>
+    <b>1, 2.</b>
     Old socket with exposed metal contacts; it's trivially easy to touch the live contacts inside, either with a finger
     or with a metal item, and thus receive a (potentially fatal) electric shock.
   </p>
   <p>
-    <b>2.</b>
+    <b>3.</b>
     Partially inserted plug; the pins are already making contact and thus live, but a significant portion of them is
     still exposed and very easy to touch when inserting a plug, especially if not looking.
   </p>
@@ -101,28 +102,112 @@
   </p>
 
   <h4>Sleeved pins or recessed sockets</h4>
-  <p></p>
+  <p>
+    As seen earlier, with older plugs and sockets it was quite common to have the pins be easy to touch when partially
+    inserted inside a power socket, thus creating a shock hazard (especially if holding the plug with wet hands, such
+    as for a hairdryer).
+    As such, most plug and socket systems around the world have, over time, been improved in order to make it impossible
+    to touch live pins on a plug, by using either sleeved plug pins or recessed sockets.
+  </p>
+  <p>
+    It should be noted that, in order for either of these systems to be truly effective, plugs and sockets have to be
+    designed for one another; effectively considering the two not as separate items but as an interface.
+    This can be noted on some very old sockets with contacts right up to the surface: with those, even a modern plug
+    with sleeved pins may still leave the pin live when partially inserted, as the socket has contacts too high up
+    compared to modern-day ones.
+  </p>
   <a href="images/safety/sleeved_pins_01.jpg"><img src="images/safety/sleeved_pins_01.jpg" height="140"></a>
   <a href="images/safety/sleeved_pins_02.jpg"><img src="images/safety/sleeved_pins_02.jpg" height="140"></a>
   <a href="images/safety/sleeved_pins_03.jpg"><img src="images/safety/sleeved_pins_03.jpg" height="140"></a>
-  <p></p>
+  <p>
+    On plugs with sleeved pins, the socket remains substantially unchanged while the pins of the plug become partially
+    covered by an insulating material, in such a way that, while making contact with the socket, the only part exposed
+    will always be the sleeved part of the pins.
+  </p>
+  <p>
+    This system is used on plugs from the UK (since 1984), Europlugs, Italian ones, Swiss ones, Australian ones, some
+    Japanese ones (though non-sleeved ones are also used), among others. It should be noted that both on the Swiss and
+    <a href="https://en.wikipedia.org/wiki/IEC_60906-1">IEC 60906-1</a> ones this is combined with recessed sockets
+    in order to provide the most protection.
+  </p>
   <a href="images/safety/socket_recessed_01.jpg"><img src="images/safety/socket_recessed_01.jpg" height="140"></a>
   <a href="images/safety/socket_recessed_02.jpg"><img src="images/safety/socket_recessed_02.jpg" height="140"></a>
   <a href="images/modern/socket_06.jpg"><img src="images/modern/socket_06.jpg" height="140"></a>
+  <p>
+    Recessed sockets, on the other hand, move the problem to the socket end: the socket must have a recess of a certain
+    depth in order to make it impossible to reach the pins while the plug is live.
+    The most well-known examples of this style of sockets are the <a href="foreign_stuff_european.html#german">Schuko</a>
+    and <a href="foreign_stuff_european.html#french">French-style</a> ones.
+  </p>
+  <p>
+    While this approach offers, in theory, a larger contact area on the pins than on plugs with sleeved pins, in
+    addition to a much more firm connection, its main downside is that it requires the use of the right sockets in
+    order to provide this protection; as such, older (generally, unearthed) sockets and some travel adaptors may allow
+    the plug to connect while leaving part of the live pins exposed.
+  </p>
 
   <h3>Circuit design and other features</h3>
   <h4>Protective earth (ground) connection</h4>
   <p>
-    This important safety feature ensures that, if due to some fault the chassis of a metal-cased appliance becomes
-    live, the fuse or breaker (or an <a href="#rcd">RCD</a>, for low-impedance faults) will trip, thus preventing
-    someone from coming in contact with the live appliance and risking a potentially fatal shock.
+    This important safety feature ensures that all exposed metal components of an appliance are connected to an earth
+    conductor, which has to be the first connection made when plugged in and the last to be disconnected.<br>
+    Thus, if the appliance has a fault, like a damaged wire, that causes its chassis to become live, a current
+    will flow to earth, tripping a fuse or breaker (for high-current faults) or an <a href="#rcd">RCD</a>
+    (for low-current ones) and interrupt power to the device, thus preventing someone from coming in contact with it
+    and risking a potentially fatal shock.
+  </p>
+  <p>
+    Because of its importance, most countries around the world now mandate new circuits to have an earth connection
+    and the use of earthed power sockets, though older installations may still have non-earthed circuits and outlets.
+    In order to enforce this protection, plugs used for earthed appliances often ensure that they cannot physically
+    be connected to such outlets, generally by the use of an earth pin, though notably the Schuko and French-style
+    plugs most commonly used in Europe allow their connection to the older style <a href="foreign_stuff_european.html#european_unearthed">CEE 7/2 sockets</a>,
+    due to the way earth connections work on these types of plug.
+  </p>
+  <!-- image -->
+  <p>
+    It should also be noted that the way earthing systems work can vary between different countries and electrical codes,
+    with some places having different types of system even within the same country; these systems are generally categorised
+    into TN and TT supplies depending on the source of the earth connection, with TN ones being sub-divided into
+    TN-S, TN-C and TN-C-S.
+  </p>
+  <p>
+    <b>TN supplies</b> are quite common in Europe and most of North America; in this system there is some form of physical
+    connection between the customer's protective earth (PE) conductor and the neutral point of the transformer.<br>
+    On TN-S ones this is in the form of a separate wire (expensive but very safe); on TN-C-S ones, on the other hand,
+    there is a combined neutral and earth wire (PEN) which is then divided at a certain point.
+    The main risk with these is if the PEN is broken for any reason; in that case the voltage in the earth conductor
+    will rise, potentially to quite dangerous voltages.
+  </p>
+  <p>
+    <b>TT supplies</b> on the other hand rely on an earth rod to be installed; this system used to be less preferrable
+    before RCDs became commonplace due to its high impedance, as a fault between live and earth may not necessarily
+    have a high enough current to trip a fuse or breaker immediately.
+    However, thanks to modern RCD protection, they have become much more attractice due to producing less interference
+    and being immune to the risk of a broken PEN TN-C-S supplies have.
   </p>
 
-  <!--<h4>Double insulation</h4>
-  <p></p>
+  <h4>Double insulation</h4>
+  <p>
+    Double insulated appliances offer protection against a single failure without relying on an earth connection, by
+    using reinforced protective insulation (such as two layers of plastic).
+    This is as opposed to Class 0 appliances, which offer no protection even after a singular failure; such devices
+    have long since been made illegal in 230V countries, though they may still be found on older items, most commonly
+    with incandescent holiday light string sets.
+  </p>
   <a href="images/safety/double_insulation_01.jpg"><img src="images/safety/double_insulation_01.jpg" height="140"></a>
+  <p>
+    In particular, one good example of this practice is in the double insulated power cords, which are the only type in
+    use in Europe nowadays. With these, the application of this principle is very clear: in addition to the standard
+    insulation around the wires an additional protective layer of plastic is present around them, so a simple cut to
+    the cable is unlikely to reveal the live conductors.
+  </p>
+  <p>
+    This style of cable is unfortunately still very common on 120V countries, however, and generally used primarily on
+    non-earthed appliances.
+  </p>
 
-  <h4>Fuses and breakers</h4>
+  <!--<h4>Fuses and breakers</h4>
   <p></p>
 
   <h4>Recessed contacts and live parts</h4>
@@ -130,20 +215,53 @@
 
   <h3>Additional protection</h3>
   <p>
-    Additional protection is named that way because it's in addition to all the other ways to protect a user from
-    electric shocks, and shouldn't be the only form of protection.
+    As the name implies, these devices offer additional safety features in order to protect a user, but shouldn't be
+    relied upon to be the only form of protection. With RCDs, where this term is more commonly used, this is because,
+    while they generally protect someone from electocution, they still require a person to receive a shock in the first
+    place.
   </p>
   <h4 id="rcd">Residual Current Device (RCD) / Ground Fault Circuit Interrupter (GFCI)</h4>
-  <p></p>
+  <p>
+    These devices monitor the current flowing in the live and neutral connections; normally, their sum should be zero,
+    however in case of a fault, such as someone touching a wire, the current may take a different return path.
+    This will then be detected by the RCD and, if above a certain limit (typically 30mA), will disconnect immediately
+    in order to stop a potentially fatal electric shock.
+  </p>
+  <p>
+    These devices have made a significant contribution to the safety of electrical installations over the last few
+    decades, and as such are required in new installations on a large number of countries worldwide.
+  </p>
   <a href="images/safety/rcd_01.jpg"><img src="images/safety/rcd_01.jpg" height="140"></a>
   <a href="images/fuseboxes/rcd_01a.jpg"><img src="images/fuseboxes/rcd_01a.jpg" height="140"></a>
   <a href="images/safety/gfci_01.jpg"><img src="images/safety/gfci_01.jpg" height="140"></a>
+  <p>
+    While their theory of operation is the same, there are some significant differences between European RCDs and
+    American GFCIs: the former are typically installed in a breaker panel in order to protect (either individual, or
+    multiple) circuits; as such, it is possible to protect an entire installation for a relatively low price to
+    the customer. They're available in either "pure" (RCD-only) devices or RCBOs, which also incorporate a breaker;
+    both devices also generally interrupt the neutral conductor.
+  </p>
+  <p>
+    American GFCIs on the other hand are generally found in sockets (something also available in Europe but less commonly
+    used), which protect the socket on the device itself and any other connected to the load terminals.
+    GFCI breakers are also avabilable, the equivalent to a European RCBO, though they're less commonly used.<br>
+    Notably, GFCIs often trip at 30mA, compared to the 5mA of RCDs in Europe; however, they're much less common,
+    generally being installed only in wet areas such as kitchens and bathrooms.
+  </p>
   
   <h3>Potential hazards</h3>
   <h4>Dangerous adaptors</h4>
+  <p>
+    Poorly made travel adaptors can pose a significant danger due to the poor connection at the socket end; this can
+    lead to high resistance connections to be made which can then melt the adaptor, creating a fire risk.
+  </p>
   <a href="images/safety/problem_03a.jpg"><img src="images/safety/problem_03a.jpg" height="140"></a>
   <a href="images/safety/problem_03b.jpg"><img src="images/safety/problem_03b.jpg" height="140"></a>
   <a href="images/safety/problem_04.jpg"><img src="images/safety/problem_04.jpg" height="140"></a>
+  <p>
+    Additonally, most of these adaptors don't offer any safety shutters, which often also means it is possible to
+    insert a plug with one pin only, leaving the other one live and very easy to touch.
+  </p>
   <!-- Using the wrong type of socket, swapping fuse sizes, older installations -->
 
 </div>
