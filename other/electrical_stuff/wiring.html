@@ -17,34 +17,107 @@
 </div>
 
 <div class="content">
-  <h2>Low-voltage (LV) wiring and distribution around the world</h2>
-  <p></p>
-
-  <h3>Three-phase transformers in Europe</h3>
-  <p></p>
-  <!-- <a href=""><img src="" height="140"></a> -->
-
-  <h3>Split phase transformers in North America</h3>
-  <p></p>
-  <a href="images/items_american/split_phase_diagram.png"><img src="images/items_american/split_phase_diagram.png" height="140"></a>
+  <h2>Electrical wiring and distribution around the world</h2>
+  <h3>Power distribution in North America</h3>
+  <p>
+    Most American houses receive power in form of split-phase (three-wire) 120/240V. This means that the transformer
+    has a 240V secondary winding, but with a central tap which is connected to earth to form the neutral - thus,
+    there are two line ("hot") wires, as well as the neutral.
+  </p>
+  <p>
+    Crucially, this is still a single-phase supply (which is why technically calling the two line conductors "phases"
+    is incorrect, though that's a minor nitpick), however since the center tap is the point connected to the earth,
+    there is only 120V between either of the two line wires and the earth (ground) instead of 240.
+  </p>
+  <p>
+    Three-phase power is still the way actual high- and medium-voltage is distributed, of course, and commercial
+    installations generally have three-phase supplies, with 120/208V and 277/480V being common.
+  </p>
 
   <h3>Earthing systems</h3>
-  <p></p>
+  <p>
+    As mentioned <a href="safety.html#earthing">previously</a>, the protective earth (ground) is a crucial safety
+    feature in an electrical installation, and thus is mandatory in most countries around the world.
+    However, the way that an earthing system can vary quite considerably, not just between different nations but even
+    inside the same country, in some cases, which each system having different sets of pros and cons.
+  </p>
+  <p>
+    In this section we'll take a quick look at each system most commonly in use, as well as some more unusual ones,
+    the way each is implemented (and thus its material cost), as well as any advantages or disadvantages of a particular
+    implementation.
+  </p>
 
-  <h4>TT supplies</h4>
-  <p></p>
+  <h4>IEC terminology</h4>
+  <p>
+    Classification of the different types of earthing arrangements is generally done using terminology set by the
+    International Electrotechnical Commission (IEC), and thus generally only used in 230V countries (equivalent North
+    American technical terms will be provided, when available).
+  </p>
+  <p>
+    Most countries around the world use either TN or TT supplies - while in both of these the neutral is generally
+    connected to earth at the transformer, they vary in having the user's earth connection be connected to the
+    neutral physically (TN supplies), or using the physical earth for this purpose (TT supplies).
+  </p>
+  <a href="images/safety/earthing_tns.png"><img src="images/safety/earthing_tns.png" height="140"></a>
+  <a href="images/safety/earthing_tncs.png"><img src="images/safety/earthing_tncs.png" height="140"></a>
+  <a href="images/safety/earthing_tt.png"><img src="images/safety/earthing_tt.png" height="140"></a>
 
   <h4>TN-S supplies</h4>
-  <p></p>
+  <p>
+    In these supplies the earth is supplied as a separate wire all the way to the transformer, where it is connected
+    to the neutral. This system was quite common in older houses in the UK, where supply wires had a lead outer
+    covering which was used as the protective earth conductor.
+    <br>
+    The main disadvantage to this system is its cost, as an entirely separate wire must be supplied just for the earth,
+    however it is also very safe, compared to TN-C and TN-C-S supplies (see below).
+  </p>
 
   <h4>TN-C supplies</h4>
-  <p></p>
+  <p>
+    This style of earthing arrangement uses a combined neutral and earth conductor (PEN), for both the roles of
+    return current and for the protective earth.
+    In practice, this means that the appliance will either have a connection inside of it from the neutral to the
+    chassis (this, of course, necessitates a polarised plug), or (more commonly) there will be a connection in the
+    socket from the neutral terminal to the one for the earth. 
+  </p>
+  <p>
+    The main advantage of this system is its cheapness: you only need two conductors for a circuit.
+    However, there is a huge risk present if the combined neutral and earth is broken at any point - in that case,
+    the chassis of the appliance will become live at mains voltage. Addditionally, this system isn't compatible, or
+    offers very limited protection, when used with RCDs.
+  </p>
+  <p>
+    In practice, because of this disadvantage this system is very rarely used nowadays, though it was allowed until
+    the 90s in the US for connecting stoves or dryers, and it was common until the 70s in Germany (where it is sometimes
+    called "classical zeroing").
+  </p>
 
   <h4>TN-C-S supplies</h4>
-  <p></p>
+  <p>
+    In this system there is still a combined earth and neutral (PEN) wire, however it gets split off into separate
+    neutral and earth conductors at a certain point (typically the supplier's cutout, power meter, or in North America
+    the first point of disconnection), which then never recombine.
+  </p>
+  <p>
+    This system is widely used in Europe (though not in every country), and is the only one used in North America.
+    Effectively, it reduces (but doesn't remove completely) the risks of a TN-C system, while still being fairly
+    cheap, at least for the power distributor.
+  </p>
 
-  <h4>Isolated (IT) supplies</h4>
-  <p></p>
+  <h4>TT supplies</h4>
+  <p>
+    With these systems the neutral and earth aren't physically interconnected; instead, the earth connection is
+    provided purely by an earth electrode.
+    This type of supply used to be undesirable before the advent of RCDs, as a short between line and earth would be
+    unlikely to immediately trip a fuse or circuit breaker, leaving the fault present for an extended period of time.
+    <br>
+    However, thanks to RCDs becoming cheaper (and now being a requirement for most things anyways), these supplies
+    have become much more appealing, due to not requiring the extra cost of an earth wire of TN-S supplies while also
+    not presenting the risk of a broken PEN that TN-C-S supplies have.
+  </p>
+  <p>
+    This system is used in Italy and most of Southern Europe, as well as Japan and Denmark.
+  </p>
   
 </div>
 
