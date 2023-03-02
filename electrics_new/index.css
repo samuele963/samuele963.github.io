@@ -115,9 +115,12 @@ body {
 
 /* Layout for mobile devices */
 @media screen and (max-width:845px) {
+  /* Hide the extra margin that shows the bg image */
   body {
     margin-top: 0;
+    margin-bottom: 0;
   }
+  /* Make icons smaller */
   .bigicons>a>img {
     width: 85px;
   }
@@ -125,6 +128,7 @@ body {
     font-size: 108%;
     width: 100px;
   }
+  /* Make links not side by side */
   .sections-button {
     width: 100%;
   }
