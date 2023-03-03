@@ -102,7 +102,7 @@ body {
   text-decoration: none;
 }
 /* Icons */
-.sections-button>img {
+.sections-button>a>img {
   height: 60px;
   padding-right: 4px;
   float: left;

@@ -16,6 +16,10 @@ body {
   font-size: large;
 }
 
+.image {
+  height: 150px;
+}
+
 /* Top navigation bar */
 .topnav {
   overflow: hidden;
