@@ -132,7 +132,7 @@ body {
   .sections-button {
     width: 100%;
   }
-  .sections-button>img {
-  height: 58px;
+  .sections-button>a>img {
+  height: 61px;
   }
 }
