@@ -120,7 +120,7 @@ body {
     margin-top: 0;
     margin-bottom: 0;
   }
-  /* Make icons smaller */
+  /* Make main icons smaller */
   .bigicons>a>img {
     width: 85px;
   }
@@ -132,7 +132,8 @@ body {
   .sections-button {
     width: 100%;
   }
+  /* Icons for the link buttons */
   .sections-button>a>img {
-  height: 61px;
+  height: 62px;
   }
 }
