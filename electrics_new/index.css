@@ -90,7 +90,7 @@ body {
   font-size: 110%;
 }
 
-/* Buttons linking to other pages */
+/* Buttons linking to the sub-pages */
 .sections-button {
   float: left;
   width: 50%;
@@ -111,6 +111,12 @@ body {
   content: "";
   display: table;
   clear: both;
+}
+
+/* Buttons at the end of the page */
+.endbuttons {
+  background-color: rgba(0, 40, 170, 0.37);
+  padding: 8px;
 }
 
 /* Layout for mobile devices */
