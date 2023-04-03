@@ -40,7 +40,8 @@
   <p>
     Note that in all of these systems, except for the IT one, the central point of the transformer is connected to
     an earth rod and thus becomes the neutral of the supply. In some countries this is referred to as the "zero"
-    point as the neutral is at 0V with respect to earth.
+    point as the neutral is a approximately 0V with respect to earth.
+    To combat voltage drop, it's also common for it to be earthed at a few other points as well.
   </p>
   <a href="images/wiring/earthing_tns.png"><img src="images/wiring/earthing_tns.png" alt="" class="image"></a>
   <a href="images/wiring/earthing_tncs.png"><img src="images/wiring/earthing_tncs.png" alt="" class="image"></a>
@@ -54,8 +55,8 @@
     used as the protective earth (PE) conductor.
   </p>
   <p>
-    The main disadvantage of this system is the high cost, as an entirely separate wire must be supplied; however, it is
-    also very safe, compared to TN-C and TN-C-S supplies.
+    The disadvantage of this system is the high cost, as an entirely separate wire must be supplied; however, it is
+    also very safe, compared to TN-C and TN-C-S supplies, as there's not much that could go wrong with it.
   </p>
 
   <h4 id="tnc">TN-C supplies</h4>
@@ -64,55 +65,61 @@
     return current and for the protective earth.
     In a real installation, this means either having a connection inside the appliance from the neutral to the chassis
     (this, of course, necessitates a polarised plug) or, more commonly, there will be a connection behind the socket
-    from the neutral to the earth contact (sometimes called as a "bootleg ground").
+    from the neutral to the earth contact (sometimes called a "bootleg ground").
   </p>
   <p>
     The only advantage of this system is its cheapness: you only need two conductors for a circuit.
-    However, there is a huge risk present if the combined neutral and earth is broken at any point: in that case, the
-    chassis of the appliance will become live at mains voltage - what is known as a "PEN fault".
-    Additionally, this system isn't compatible, or offers very limited protection, when used with RCDs.
+    However, there is a huge risk present if the combined neutral and earth is broken at any point - what is techically
+    known as a "PEN fault".
+    <br>
+    In that case, the neutral will rise up to mains voltage, or close to it, and since that's the same wire being
+    used for the earth connection, this will cause all metal-cased appliances to also be at a dangerous voltage.
   </p>
+  <a href="images/wiring/pen_fault.png"><img src="images/wiring/pen_fault.png" alt="" height="270"></a>
   <p>
-    These days, due to this safety risk, this system is seldom used. However, it was allowed until the 90s in the US for
-    connecting stoves and dryers, using a "3-wire" power outlet (replacements for which are still available), and was
-    common until the 70s in Germany, using the bootleg ground method, where it's sometimes referred to as "classical
-    zeroing".
+    These days, due to this huge safety risk, this system is seldom used, outside of power distribution.
+    However, it was allowed until the 90s in the US for connecting stoves and dryers, using a "3-wire" power outlet
+    (replacements for which are still available), and was common until the 70s in Germany, using the bootleg ground method,
+    where it's sometimes referred to as "classical zeroing".
   </p>
 
   <h4 id="tncs">TN-C-S supplies</h4>
   <p>
-    In this system, just like with TN-C, there's still a combined neutral and protective earth (PEN) wire. However,
-    it's then split off into separate neutral and earth conductors at a certain point - usually in the supplier's
-    cutout, power meter, or (in North America) at the first point of disconnection - which then never recombine.
+    In this system the supply is still distributed as TN-C for most of the way, until it enters a building, and as such
+    there's still a combined protective earth and neutral (PEN) wire.
+    However, this is then split off into separate neutral and earth conductors at a certain point - usually in the
+    supplier's cutout, power meter, or (in North America) at the first point of disconnection - which then never recombine.
   </p>
   <p>
     The PEN is also generally earthed at multiple points, to reduce the danger of it potentially suffering from a
     broken or loose connection. The exact way in which this is done varies between countries, though this is often
-    done by making each building still have an earth electrode.
-    In the UK, however, this is not required - instead, the supplier provides earthing rods at various intervals
-    along the length of the supply wires.
+    done by using earthing rods at regular intervals along the length of the supply wires.
+    It's also common for most places (aside from the UK) to also have an earth rod as a mandatory feature inside an
+    installation.
   </p>
   <p>
-    This system is quite common in Europe, though not in every country, and it's the only type used in North America.
-    Effectively, it helps reduce the chance of a broken PEN that TN-C supplies have, though it doesn't eliminate it
-    entirely (as the supply cables are still TN-C), while still remaining fairly cheap.
+    This system is quite common in Europe - though it depends on the specific country as the TT one is also widely used -
+    and it's the only type present in North America.
+    Effectively, it helps reduce (though, it can't eliminate completely) the high risk of a broken PEN that TN-C supplies
+    have, by only making use of it for the supply wires, while retaining part of its cost advantage.
   </p>
 
   <h4 id="tt">TT supplies</h4>
   <p>
-    On TT supplies, neutral and earth aren't physically interconnected - the earth connection is provided purely by
-    an electrode.
+    On TT supplies, neutral and earth are never physically interconnected - the earth connection is provided purely by
+    a local electrode.
     This used to be undesirable before the advent of <a href="safety.html#rcd">RCDs</a>, as a fault between line and earth
-    wouldn't have a current high enough to immediately trip a fuse or circuit breaker.
+    wouldn't have a current high enough to immediately trip a fuse or circuit breaker, and would thus present the risk of
+    leaving the faulty appliance energised.
   </p>
   <p>
-    However, thanks to RCDs having become much cheaper, and being necessary to use for most circuits anyways, these
-    supplies have become much more appealing, due to them not needing an extra earth wire like TN-S supplies while also
-    not presenting the risk of a broken PEN that TN-C-S supplies have.
+    However, thanks to RCDs having become much cheaper, and nowadays being necessary to use for most circuits anyways,
+    regardless of supply type, the TT system has become much more appealing, as they're both safe like TN-S but also
+    cheap like TN-C-S, without suffering the risk of a PEN fault like the latter.
   </p>
   <p>
-    The use of this system is common in Italy, Denmark, most of Southern Europe, as well as Japan and a few other countries,
-    especially in rural installations.
+    The use of this system is common in Italy, Denmark, France, Japan, alongside other countries; they're especially
+    common in rural installations.
   </p>
 
   <h4 id="it">IT (isolated) supplies</h4>
@@ -170,4 +177,4 @@
 
 </div>
 </body>
-</html> 
+</html>
