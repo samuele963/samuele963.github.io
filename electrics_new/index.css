@@ -115,8 +115,15 @@ body {
 
 /* Buttons at the end of the page */
 .endbuttons {
-  background-color: rgba(0, 40, 170, 0.37);
+  background-color: rgba(28, 125, 200, 0.5);
+  color: white;
   padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.endbuttons>a {
+  color: white;
+  font-weight: bold;
 }
 
 /* Layout for mobile devices */
