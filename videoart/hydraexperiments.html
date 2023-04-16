@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Analog video experimentation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="samuele963">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<div class="topnav">
+  <a href="../index.html">Homepage</a>
+</div>
+
+<div class="content">
+  <h2>Experiments with the Hydra video synth</h2>
+  <p><i>Work in progress</i></p>
+  <p>
+    This page documents my experiments in the <a href="https://hydra.ojack.xyz/" target="_blank">Hydra</a> browser-based
+    video synthetiser.
+  </p>
+  <p>
+    Hydra can be quite a useful tool when creating video art, as it can generate many different types of visuals, even
+    ones reacting to audio or cursor movement, using its <a href="https://hydra.ojack.xyz/docs/#/getting_started">
+    programming language</a>. These video patterns can then be converted to composite using a simple converter and used
+    as a source for video mixers and processors.
+  </p>
+
+  <h3>A simple colour rotation program</h3>
+  <p>
+    To start off, I checked out the "<a href="https://hydra.ojack.xyz/docs/#/getting_started">Getting Started</a>"
+    page, and tried writing a simple program.
+    This is done by using the <code>osc</code> command to create an oscillator, and the <code>out</code> command to
+    display it.
+  </p>
+<textarea rows="3" cols="50" readonly="true">
+osc(4.3, 0.7, 0.6)
+  .color(3.83, 0.4, 4.5)
+  .out()</textarea>
+  <p>The results look like this:</p>
+  <img src="hydra_experiments/hydra1.png" height="180">
+
+  <p>
+    By changing the values in the oscillator and in the <code>color</code> command, we can vary the output considerably.
+  </p>
+  <p>
+    We can then modify the code some more it to change the output even further:
+  </p>
+<textarea rows="6" cols="50" readonly="true">
+osc(4.3, 0.7, 0.6)
+  .color(3.83, 0.4, 4.5)
+  .rotate(0.2, 1, 0.1)
+  .kaleid(3)
+  .colorama()
+  .out()</textarea>
+
+  <p>
+    Once again, we can observe the results:
+  </p>
+  <img src="hydra_experiments/hydra2.png" height="180">
+
+</div>
+</body>
+</html> 
