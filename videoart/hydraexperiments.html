@@ -32,8 +32,18 @@
   <p>
     To start off, I checked out the "<a href="https://hydra.ojack.xyz/docs/#/getting_started">Getting Started</a>"
     page, and tried writing a simple program.
-    This is done by using the <code>osc</code> command to create an oscillator, and the <code>out</code> command to
-    display it.
+    Following the tutorial, I started by using the <code>osc</code> command to create an oscillator, and the <code>out</code>
+    command to display it.
+  </p>
+<textarea rows="1" cols="50" readonly="true">
+osc().out()
+</textarea>
+
+  <p>
+    This produces some simple moving vertical bars. By changing the values in the oscillator, it's possible to vary the
+    signal it generates.<br>
+    It's then possible to modify the signal even further, in a variety of ways, such as with the <code>color</code>
+    command.
   </p>
 <textarea rows="3" cols="50" readonly="true">
 osc(4.3, 0.7, 0.6)
@@ -44,9 +54,8 @@ osc(4.3, 0.7, 0.6)
 
   <p>
     By changing the values in the oscillator and in the <code>color</code> command, we can vary the output considerably.
-  </p>
-  <p>
-    We can then modify the code some more it to change the output even further:
+    This is already quite useful as a video source, but we can continue to change the output even more by using various
+    transformation commands, such as <code>kaleid</code> (which acts as a kaleidoscope) and <code>colorama</code>.
   </p>
 <textarea rows="6" cols="50" readonly="true">
 osc(4.3, 0.7, 0.6)
@@ -57,7 +66,7 @@ osc(4.3, 0.7, 0.6)
   .out()</textarea>
 
   <p>
-    Once again, we can observe the results:
+    Once again, we can observe the results, which are now considerably more animated:
   </p>
   <img src="hydra_experiments/hydra2.png" height="180">
 

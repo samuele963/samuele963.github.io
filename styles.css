@@ -59,6 +59,13 @@ body {
   color: #d1b3ff;
 }
 
+/* Properties for code */
+code {
+  font-size: 108%;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 2px;
+}
+
 /* Layout used on mobile devices */
 @media screen and (max-width: 600px) {
   html {
