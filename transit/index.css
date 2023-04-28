@@ -1,0 +1,37 @@
+html {
+  background-color: beige;
+}
+p, ol, ul {
+  font-size: 105%;
+}
+.introduction {
+  color: darkslategray;
+}
+
+/* Size of the images */
+.fullsizeimage {
+  height: 460px;
+}
+.imagesidebyside {
+  height: 290px;
+}
+
+/* Layout for smaller screens */
+@media screen and (max-width: 700px) {
+  .fullsizeimage {
+    height: 320px;
+  }
+  .imagesidebyside {
+    height: 320px;
+  }
+}
+
+/* Layout for mobile devices */
+@media screen and (max-width: 500px) {
+  .fullsizeimage {
+    height: 260px;
+  }
+  .imagesidebyside {
+    height: 260px;
+  }
+}

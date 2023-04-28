@@ -97,11 +97,12 @@ body {
   padding: 4px;
   padding-left: 3pt; padding-right: 3pt;
 }
+/* Link properties */
 .sections-button>a {
   color: black;
   text-decoration: none;
 }
-/* Icons */
+/* Icons for the buttons */
 .sections-button>a>img {
   height: 60px;
   padding-right: 4px;
@@ -126,7 +127,7 @@ body {
   font-weight: bold;
 }
 
-/* Layout for mobile devices */
+/* Layout for smaller screens */
 @media screen and (max-width:845px) {
   /* Hide the extra margin that shows the bg image */
   body {
@@ -145,8 +146,16 @@ body {
   .sections-button {
     width: 100%;
   }
-  /* Icons for the link buttons */
+  /* Make the icons slightly larger */
   .sections-button>a>img {
-  height: 65px;
+  height: 62px;
+  }
+}
+
+/* Layout for mobile phones */
+@media screen and (max-width:600px) {
+  /* Make the icons larger */
+  .sections-button>a>img {
+    height: 67px;
   }
 }

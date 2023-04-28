@@ -1,9 +1,9 @@
+/* Properties for the entire page */
 html {
   padding-left: 8px;
   padding-right: 8px;
   padding-bottom: 16px;
 }
-
 body {
   background-color: #1c87a7;
   max-width: 900px;
@@ -11,11 +11,13 @@ body {
   margin-right: auto;
 }
 
+/* Properties for tables */
 .spctable table, .spctable th, .spctable td {
   border: 1px solid black;
   font-size: large;
 }
 
+/* Sets the size of images */
 .image {
   height: 155px;
 }
@@ -25,8 +27,7 @@ body {
   overflow: hidden;
   background-color: #84e0cb;
 }
-
-/* Topnav links */
+/* Navigation links */
 .topnav a {
   float: left;
   display: block;
@@ -36,14 +37,12 @@ body {
   padding: 9px 16px;
   text-decoration: none;
 }
-
-/* Change color on hover */
 .topnav a:hover {
   background-color: #ffffff;
   color: black;
 }
 
-/* Content */
+/* Website content */
 .content {
   padding: 0px 14px;
   font-family: Arial, Helvetica, sans-serif;
@@ -54,7 +53,6 @@ body {
 .content a:link {
   color: #ccff99;
 }
-
 .content a:visited {
   color: #d1b3ff;
 }
@@ -81,6 +79,6 @@ code {
 /* Make images larger on mobile phones */
 @media screen and (max-width: 400px) {
   .image {
-    height: 210px;
+    height: 230px;
   }
 }
