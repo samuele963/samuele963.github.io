@@ -17,7 +17,7 @@ p, ol, ul {
 }
 
 /* Layout for smaller screens */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .fullsizeimage {
     height: 320px;
   }
@@ -27,7 +27,7 @@ p, ol, ul {
 }
 
 /* Layout for mobile devices */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .fullsizeimage {
     height: 260px;
   }
