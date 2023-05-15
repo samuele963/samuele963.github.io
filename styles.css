@@ -18,8 +18,17 @@ body {
 }
 
 /* Sets the size of images */
+/* Single image */
+.image-1 {
+  height: 210px;
+}
+/* Double image */
+.image-2 {
+  height: 180px;
+}
+/* Triple image (default) */
 .image {
-  height: 155px;
+  height: 160px;
 }
 
 /* Top navigation bar */
@@ -77,8 +86,8 @@ code {
 }
 
 /* Make images larger on mobile phones */
-@media screen and (max-width: 400px) {
-  .image {
+@media screen and (max-width: 480px) {
+  .image-1, .image-2, .image {
     height: 230px;
   }
 }
