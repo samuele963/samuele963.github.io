@@ -13,25 +13,25 @@ p, ol, ul {
 
 /* Size of the images */
 .image-1 {
-  height: 420px;
+  height: 440px;
 }
 .image-2 {
-  height: 290px;
+  height: 250px;
 }
 .image-3 {
-  height: 200px;
+  height: 180px;
 }
 
 /* Layout for smaller screens */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 805px) {
   .image-1, .image-2, .image-3 {
     height: 340px;
   }
 }
 
 /* Layout for mobile devices */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   .image-1, .image-2, .image-3 {
-    height: 230px;
+    height: 240px;
   }
 }

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" href="icon.png">
 
   <!-- HTML tags for title, author and description -->
@@ -32,253 +32,51 @@
   </div>
   <hr>
 
+  <h3>Preview:</h3>
+  <img src="images/CividaleStation1.jpg" class="image-1" id="gallerypic"><br>
+  <!-- Image selection buttons (hidden by default) -->
+  <div id="buttonselectsection" style="display: none;">
+    <img src="images_homepage/button1.png" height="19" onclick="ChangeGalleryPic(1)" alt="1">
+    <img src="images_homepage/button2.png" height="19" onclick="ChangeGalleryPic(2)" alt="2">
+    <img src="images_homepage/button3.png" height="19" onclick="ChangeGalleryPic(3)" alt="3">
+    <img src="images_homepage/button4.png" height="19" onclick="ChangeGalleryPic(4)" alt="4">
+    <img src="images_homepage/button5.png" height="19" onclick="ChangeGalleryPic(5)" alt="5">
+    <img src="images_homepage/button6.png" height="19" onclick="ChangeGalleryPic(6)" alt="6">
+    <img src="images_homepage/button7.png" height="19" onclick="ChangeGalleryPic(7)" alt="7">
+    <img src="images_homepage/button8.png" height="19" onclick="ChangeGalleryPic(8)" alt="8">
+    <img src="images_homepage/button9.png" height="19" onclick="ChangeGalleryPic(9)" alt="9">
+    <img src="images_homepage/button10.png" height="19" onclick="ChangeGalleryPic(10)" alt="10">
+  </div>
+  <hr>
 
-  <h2>Train travel in South Tyrol</h2>
-  <p>
-    At the beginning of 2022 I took a short trip to South Tyrol, in Italy. The region is generally considered to have
-    among the best public transport in the country and, even though I wasn't able to check out its transit network as
-    thoroughly as I would have liked to, what I did see was definitely enough to impress me: the stations were modern,
-    clean and wheelchair-accessible; so were the trains themselves, while the service was extremely frequent, taking
-    full advantage of the line.
-  </p>
-  <p>
-    I travelled between the stations of Villabassa and Lienz (Austria), on a cross-border regional train run by SAD,
-    which operates most of the buses and trains in South Tyrol.
-  </p>
-  <figure>
-    <img src="images/SADTrain1.jpg" class="fullsizeimage">
-    <figcaption>
-      A modern Stadler FLIRT EMU operated by SAD, a major bus and train operator in the region.
-    </figcaption>
-  </figure>
-
-  <h3>The line</h3>
-  <p>
-    The train, originating in <span lang="it">Fortezza</span>/<span lang="de">Franzensfeste</span>, travels along the
-    <i lang="de">Pustertalbahn</i> up to the border station of <span lang="it">San Candido</span>/<span lang="de">Innichen</span>
-    and then on part of the <i lang="de">Drautalbahn</i> up to Lienz.
-    Both lines are entirely electrified, at 3kV DC on the Italian side and 15kV AC in Austria, with trains switching
-    between voltages in <span lang="it">San Candido</span>; they are also single-tracked, however with enough passing
-    loops to mantain a fairly frequent service.
-  </p>
-  <p>
-    San Candido is also where trains heading to Austria change conductors, with the Austrian section being essentially
-    run as an ÖBB (=Austrian railways) service, just with Italian rolling stock.
-    This is likely also why this part of the journey isn't sold on Italian ticket machines: tickets have to be purchased
-    on board.
-  </p>
-  <figure>
-    <img src="images/SanCandidoStation1.jpg" class="imagesidebyside">
-    <img src="images/SanCandidoStation2.jpg" class="imagesidebyside">
-    <figcaption>
-      The San Candido railway station; trains continuing to Austria change voltage and personnel here.
-    </figcaption>
-  </figure>
-
-  <h3>The service</h3>
-  <p>
-    However, the impressive part is that, despite the single-tracked line and not particularly high maximum speeds
-    (understandable given that this is in the mountains), SAD still operates trains every 30 minutes between
-    <span lang="it">Fortezza</span> and <span lang="it">San Candido</span> (and sometimes up to <span lang="de">
-    Sillian</span>), with every other train terminating in <span lang="de">Lienz</span>.
-  </p>
-  <p>
-    Frequencies like these make what would already be a pretty good regional rail system into a truly excellent one -
-    trains arrive so often that you might not even need to worry about the timetable, while tourists can move between
-    the various towns and ski slopes (which are, in some cases, directly connected to the train stations) without having
-    to use a car (a great way to reduce pollution), both of which are features cleverly promoted in the bus and train
-    timetable leaflet found at tourist information centres.
-  </p>
-  <figure>
-    <img src="images/VillabassaStation1.jpg" class="fullsizeimage">
-    <figcaption>
-      The station in <span lang="it">Villabassa</span> is very modern, with an indoors waiting area, covered bike parking and full accessibility.
-    </figcaption>
-  </figure>
-
-  <h3>The trains</h3>
-  <p>
-    Service is carried out using Stadler FLIRT multi-voltage trains (ETR 170), capable of operating both under the
-    3kV DC used in Italy and the 15kV AC used in Austria. These trains have only entered service fairly recently and
-    as such have a very modern interior, with wide windows, accessible toilets, information LCDs, bike and ski storage
-    (very important especially given the amount of tourists in this area) and separate recycling bins.
-  </p>
-  <p>
-    It's also difficult not to notice the ample amount of spaces dedicated to wheelchair users and prams, most of which
-    have foldable seats inside of them so they can alternatively be used as a standard seating area.
-    In general, it's evident that much care and attention has been given to accessibility on the line: all the stations
-    (minus the one in <span lang="it">San Candido</span>, which is planned to be moved closer to the centre) are
-    accessible and the trains of course feature step-free access.
-  </p>
-  <figure>
-    <img src="images/SADTrain2.jpg" class="imagesidebyside">
-    <img src="images/SADTrain3.jpg" class="imagesidebyside">
-    <figcaption>
-      The interior of the FLIRT. Stadler makes great trains and this one is no exception, with spacious interiors and modern features.
-    </figcaption>
-  </figure>
-
-  <h3>The stations</h3>
-  <p>
-    As with the rolling stock, the stations on this line are also modern and well-kept. The platforms are 55cm high, to
-    allow for level boarding, and elevators are present for wheelchair users, prams, people with suitcases and anyone
-    that wants to use them (accessibility features can be useful for a whole number of users, not just people in
-    wheelchairs).
-  </p>
-  <p>
-    Signage is of course bilingual, with station names being written both in Italian and German, and train announcements
-    are in both languages as well.
-  </p>
-  <figure>
-    <img src="images/VillabassaStation2.jpg" class="imagesidebyside">
-    <img src="images/VillabassaStation3.jpg" class="imagesidebyside">
-    <figcaption>
-      While having been recently renovated, the <span lang="it">Villabassa</span> railway station still uses its original building, which has been well-preserved.
-    </figcaption>
-  </figure>
-
-  <h3>Conclusions</h3>
-  <p>
-    So, what can we learn from the trains in South Tyrol? Two things are present here which make this line truly great,
-    and which any public transit service must have in order to be useful to the public and thus successful:
-    <b>frequency</b> and <b>user experience</b>.
-  </p>
+  <h3>Articles:</h3>
   <ul>
-  <li>
-    <b>Frequency:</b> to compete with cars, which are inherently much more flexible at going from A to B than public
-    transport, trains (and transit in general) must run very frequently - often enough that missing the train simply
-    results in a mild inconvenience rather than leaving you stranded for hours.
-    The fact that this single-tracked railway line in the mountains has better frequencies than what generally exists
-    between cities with much larger populations in the rest of Italy is telling of how far we still need to go in
-    improving service here.
-  </li>
-  <li>
-    <b>User experience:</b> transit must also be comfortable (both the vehicles themselves and the stations) and usable
-    by everyone (good accessibility is very important). This means having adequate shelter from the rain and summer
-    heat (this last point is often overlooked), adequate parking for bicycles and easy to use ticket machines and displays.
-  </li>
+    <li><a href="article1.html">Taking the train in South Tyrol</a></li>
+    <li><a href="article2.html">Experiences in Austria: Lienz station</a></li>
   </ul>
-  <p>
-    This line essentially does all of those things: the service is frequent and convenient to use; the stations are new
-    and accessible. Unsurprisingly, this meant that there were a lot of people taking the train, even in Villabassa,
-    which only has a population of 1600.
-  </p>
-  <p>
-    My only complaints were with the ticketing system: not being able to buy the tickets for the Austrian section on
-    the Italian ticket machines is quite annoying and confusing for the end user; and there was no indication (not even
-    a sign) that they had to be purchased on board of the train. We had to ask someone working there, which is certainly
-    not ideal.
-    Additionally, the only ticket machine in Villabassa was out of service; it was interesting however to see that the
-    machines let you buy both train and bus tickets, quite a useful feature.
-  </p>
-  <p>
-    But that's, essentially, the only major complaint I had about the trains there. Everything else was pretty nice,
-    with only a few minor improvements that I could think of, like using larger displays for the departures board
-    at the stations (the standard ones used throughout Italy can only fit half the number of displayed trains when
-    accomodating for the bilingual station names).
-  </p>
+
+  <h3>Image galleries:</h3>
+  <ul>
+    <li><a href="gallery1.html">The Udine-Cividale (FUC) railway</a></li>
+    <li><a href="gallery2.html">Regional trains in Slovenia</a></li>
+    <!--<li><a href="gallery3.html">A trip on the Cuneo-Ventimiglia line</a></li>-->
+  </ul>
   <hr>
 
-
-  <h2>Lessons from Austria: good bus connections</h2>
-  <p>
-    During the aformentioned trip in South Tyrol I managed to visit Lienz, in Austria, by train.
-    This was the first time I had ever been in an Austrian station, and I have to say, I was quite impressed with it.
-    The building was modern and clean, and it was very easy to figure out which train to take by looking at the
-    displays; plus, it was only a short walk away from the town centre.
-  </p>
-  <p>
-    However what I think struck me the most was how easy and convenient it was for someone to arrive by bus and take
-    the train, or viceversa.
-    I did not take a bus during that trip, but the stop being built right into the station building itself was quite
-    impressive to me, and clearly showed care and attention for people using buses to get to the station.
-  </p>
-  <figure>
-    <img src="images/LienzStation1.jpg" class="fullsizeimage">
-    <figcaption>
-      The bus terminal at the Lienz train station. Connecting from bus to train only takes a few steps.
-    </figcaption>
-  </figure>
-  <p>
-    The bus terminal felt open and spacious, simply a continuation of the station itself - in fact, as seen from the
-    picture platform 1 is directly next to the bus stop: transferring couldn't be easier, and access to the other
-    platfoms is of course trivially easy as well.
-    The entire thing was screaming "multi-modal mobility", with the train station being much more than that: a
-    transportation hub for the entire town, and even neighbouring areas thanks to the bus connections.
-  </p>
-  <p>
-    Often, bus infrastructure is subject to a lack of care and attention, even at major transfer points like at train
-    stations. Such is the case where I live: bus stops at railway stations only have the usual shed to protect from
-    the rain, and transferring requires crossing the road (and thus waiting at a crosswalk).
-    It's no wonder that most people travel by car then: transit is clearly not considered a priority, and only there
-    because "it has to exist".
-  </p>
-  <p>
-    This station, however, provides an excellent experience for any transit rider, protecting them from the rain and
-    summer heat and also making transfers extremely easy.
-  </p>
-  <hr>
-
-
-  <h2>Image gallery: Taking a look at the FUC railway</h2>
-  <figure>
-    <img src="images/CividaleStation1.jpg" class="fullsizeimage">
-    <figcaption>
-      The train to Udine, about to leave. Announcements are made in various languages over the PA speakers.
-    </figcaption>
-  </figure>
-  <figure>
-    <img src="images/CividaleStation2.jpg" class="imagesidebyside">
-    <img src="images/CividaleStation3.jpg" class="imagesidebyside">
-    <figcaption>
-      The Cividale railway station. It is the terminus for the line that links the town with the city of Udine once an hour.
-    </figcaption>
-  </figure>
-  <figure>
-    <img src="images/CividaleStation5.jpg" class="fullsizeimage">
-    <figcaption>
-      A Stadler GTW train waiting at the station. This line isn't electrified, so service is carried out using DMUs - generally this one, though older Class 663s are sometimes used as well.
-      These trains are very modern, with air conditioning and full accessibility. All the stations on the line, apart from Udine, were renovated recently and are accessible.
-    </figcaption>
-  </figure>
-  <figure>
-    <img src="images/CividaleStation4.jpg" class="fullsizeimage">
-    <figcaption>
-      A Class ALn 663 diesel railcar. These trains were (and still are) used extensively on many diesel lines in Italy, though on the Udine-Cividale line the more modern Stadlers are generally used instead.
-    </figcaption>
-  </figure>
-  <hr>
-
-  <h2>Image gallery: taking the train in Slovenia</h2>
-  <p>
-    While Slovenian trains may not be very fast (or frequent), they're a wonderful way to explore the scenery of this
-    amazing country. These photos were taken (at different times) on the very scenic Transalpina Railway, mainly used
-    by diesel-powered local trains.
-  </p>
-  <figure>
-    <img src="images/TrainSlovenia1.jpg" class="fullsizeimage">
-    <figcaption>
-      A train waiting at the station; this line is entirely unelectrified and single-tracked.
-      This station is also connected to Italy, however that section of track is only used by freight.
-    </figcaption>
-  </figure>
-  <figure>
-    <img src="images/TrainSlovenia2.jpg" class="fullsizeimage">
-    <figcaption>
-      Another local train, waiting to depart at <span lang="si">Bohinjska Bistrica</span>. As with most of the stations on
-      the Slovenian network, to go between platforms you have to physically cross the tracks.
-    </figcaption>
-  </figure>
-  <figure>
-    <img src="images/TrainSlovenia3.jpg" class="imagesidebyside">
-    <img src="images/TrainSlovenia4.jpg" class="imagesidebyside">
-    <figcaption>
-      Of course, the views you can see when travelling on this line are absolutely wonderful.
-    </figcaption>
-  </figure>
-  <br>
+  <img src="images_homepage/banner.jpg" height="52" alt="Sustainability travels by train.">
 
   <p><a href="../index.html">Homepage</a></p>
+
+  <script type="text/javascript">
+    // Image selection function
+    function ChangeGalleryPic(n) {
+      document.getElementById('gallerypic').src = "images_homepage/image"+n+".jpg";
+    }
+    // Show the image selection buttons if JS is enabled
+    document.getElementById('buttonselectsection').style = 'display: contents;';
+    // Display a random image
+    ChangeGalleryPic(Math.floor(Math.random() * 10) + 1);
+  </script>
 </body>
 
 </html>
