@@ -1,5 +1,8 @@
 html {
   background-color: beige;
+  padding: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 p, ol, ul {
   font-size: 105%;
@@ -9,29 +12,26 @@ p, ol, ul {
 }
 
 /* Size of the images */
-.fullsizeimage {
-  height: 460px;
+.image-1 {
+  height: 420px;
 }
-.imagesidebyside {
+.image-2 {
   height: 290px;
+}
+.image-3 {
+  height: 200px;
 }
 
 /* Layout for smaller screens */
-@media screen and (max-width: 800px) {
-  .fullsizeimage {
-    height: 320px;
-  }
-  .imagesidebyside {
-    height: 320px;
+@media screen and (max-width: 600px) {
+  .image-1, .image-2, .image-3 {
+    height: 340px;
   }
 }
 
 /* Layout for mobile devices */
-@media screen and (max-width: 550px) {
-  .fullsizeimage {
-    height: 260px;
-  }
-  .imagesidebyside {
-    height: 260px;
+@media screen and (max-width: 480px) {
+  .image-1, .image-2, .image-3 {
+    height: 230px;
   }
 }
