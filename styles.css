@@ -11,12 +11,6 @@ body {
   margin-right: auto;
 }
 
-/* Properties for tables */
-.spctable table, .spctable th, .spctable td {
-  border: 1px solid black;
-  font-size: large;
-}
-
 /* Sets the size of images */
 /* Single image */
 .image-1 {
@@ -36,7 +30,7 @@ body {
   overflow: hidden;
   background-color: #84e0cb;
 }
-/* Navigation links */
+/* Navigation bar links */
 .topnav a {
   float: left;
   display: block;
@@ -58,7 +52,7 @@ body {
   color:white;
 }
 
-/* Content links */
+/* Colours for links */
 .content a:link {
   color: #ccff99;
 }
@@ -71,6 +65,18 @@ code {
   font-size: 108%;
   background-color: rgba(0, 0, 0, 0.1);
   padding: 2px;
+}
+
+/* Properties for info boxes */
+.infobox {
+  background-color: rgba(0, 40, 170, 0.37);
+  padding: 8px;
+}
+
+/* Properties for tables */
+.spctable table, .spctable th, .spctable td {
+  border: 1px solid black;
+  font-size: large;
 }
 
 /* Layout used on mobile devices */
