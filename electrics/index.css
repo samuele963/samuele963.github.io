@@ -148,7 +148,7 @@ body {
   }
   /* Make the icons slightly larger */
   .sections-button>a>img {
-  height: 62px;
+    height: 62px;
   }
 }
 
