@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#a4b7d0">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="files/favicon.png" type="image/png">
+
+  <!-- HTML tags for title, author and description -->
+  <title>Radial and ring circuits</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- OpenGraph tags -->
+  <meta property="og:site_name" content="">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="">
+</head>
+
+<body>
+  <div class="topnav">
+    <a href="./">Homepage</a>
+    <a style="float: right;" href="wall_boxes.html">Next</a>
+    <a style="float: right;" href="earthing.html">Previous</a>
+  </div>
+
+  <div class="content">
+    <h2>Radial and ring circuit wiring</h2>
+    <p>
+      This page covers a wiring distinction specific to the UK. While radial circuits are the type used
+      everywhere else in the world, in Britain ring ones are the default, and only recently have they
+      started falling out of favour in new installations.
+    </p>
+
+    <h3 id="radial">Radial circuits</h3>
+    <p>
+      Radial circuits are quite simple: the wire connected to a breaker (or fuse holder) is connected to each
+      socket, as required. This doesn't have to happen with a continuous cable: junction boxes are used to
+      branch off into multiple ones heading in different directions.
+    </p>
+    <p>
+      The amperage of a radial circuit tends to be 16 (15 in North America) or 20A; as such, multiple
+      circuits are required in an installation to reduce the likelyhood of tripping a breaker.
+    </p>
+
+    <h3 id="ring">Ring circuits</h3>
+    <p>
+      As the name suggests, ring circuits use a single loop of wire which connects to each socket and then
+      returns back to the breaker. This means that the current can take two paths, thus effectively doubling
+      the capacity of a wire (though real-life conditions can affect this, so a safety margin is present);
+      a 2.5 mm<sup>2</sup> conductor can thus be used for a 32A circuit, when on a radial circuit a
+      4.0 mm<sup>2</sup> one would have to be used.
+    </p>
+    <p>
+      As ring circuits always use a 32A breaker (or 30A fuse), some additional precautions have to be taken
+      to prevent the cord of an appliance to be overloaded in the case of a fault. Fused plugs are used, while
+      hard-wired devices have to be connected to a fused <a href="items_uk.html#connection_unit">connection unit</a>.
+      Additionally, adding additional sockets to a circuit is more complex, either requiring extending the ring
+      or using a "spur", which is limited to a single outlet.
+    </p>
+    <p>
+      Their main disadvantage is if the ring is broken at any point - in that case, all the current has to travel
+      through a single cable, which can be easily overloaded and risk causing a fire. Because of this, special
+      in-depth testing is required when installing or modifying a ring circuit, which isn't necessary on a
+      radial one.
+    </p>
+    <p>
+      Ring circuits became popular in the UK after World War 2, alongside the introduction of the
+      <a href="plugs_uk.html">BS 1363</a> plug standard. During the war, the commission responsible for
+      the future reconstruction efforts predicted a possible shortage of copper. The standard up to that
+      point was to use 10 or 15A radial circuits, usually with a single fuse for each socket in a building,
+      which was quite costly. Comparatively, a single 30A ring circuit could loop around the entire house
+      and connect to each socket, saving money.
+    </p>
+    <p>
+      While this made sense at the time, ring circuits are significantly outdated nowadays, and yet continue
+      to be legal to install.
+    </p>
+
+    <hr>
+    <div class="infobar bottom">
+      <b><a href="wall_boxes.html">Next page</a>:</b> Wall boxes for electrical accessories
+    </div>
+  </div>
+</body>
+</html>

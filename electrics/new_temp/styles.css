@@ -53,6 +53,13 @@ body {
 }
 
 /* Image size */
+.image.one {
+  display: block;
+  width: 87%;
+  max-width: 300px;
+  height: auto;
+  margin: 4px auto;
+}
 .image.two {
   height: 200px;
   margin-right: 1px;
@@ -125,7 +132,7 @@ table, th, td {
 }
 /* Center image on mobile devices */
 @media screen and (max-width: 582px) {
-  .image.two, .image.three {
+  .image.one, .image.two, .image.three {
     display: block;
     width: 87%;
     max-width: 380px;

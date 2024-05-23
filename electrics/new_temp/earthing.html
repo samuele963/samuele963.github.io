@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#a4b7d0">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="files/favicon.png" type="image/png">
+
+  <!-- HTML tags for title, author and description -->
+  <title>Earthing systems</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- OpenGraph tags -->
+  <meta property="og:site_name" content="">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="">
+</head>
+
+<body>
+  <div class="topnav">
+    <a href="./">Homepage</a>
+    <a style="float: right;" href="radial_ring.html">Next</a>
+    <a style="float: right;" href="transformers.html">Previous</a>
+  </div>
+
+  <div class="content">
+    <h2>Earthing systems</h2>
+    <p>
+      As mentioned <a href="safety.html#earthing">previously</a>, the protective earth (ground) is a crucial
+      safety feature in an electrical installation, and is thus mandatory in most countries around the world.
+      While this connection can have several purposes, its principal one is to ensure that the chassis of
+      metal-cased appliances always has a return path back to the transformer so that, if a live wire comes in
+      contact with it during a fault, current will flow and cause an automatic disconnection device (such as a
+      breaker) to trip and turn off the power.
+    </p>
+    <p>
+      However, despite having a seemingly simple goal, there are several different ways in which an earthing
+      system can be set up, sometimes even within the same country, with each one having its own set of pros
+      and cons.
+    </p>
+    <p>
+      Classification of these different types of systems is done using terminology set by the International
+      Electrotechnical Commission (IEC) and divided into three general categories: TN, TT and IT.
+      TN supplies (that is, ones where the neutral is physically connected to the earth conductor at some point)
+      are subsequently divided into subcategories to specify the point at which this connection is made.
+    </p>
+    <p>
+      In all of these these systems, aside from the rather uncommon IT ones, the central point of the
+      transformer is connected to an earth electrode, often at multiple locations across the network to combat
+      against voltage drop. This becomes the <i>neutral</i> (N), or <i>zero</i>, of the supply, as it's at
+      approximately 0V with respect to earth.
+    </p>
+    <p>
+      It's precisely because of this connection that touching a live wire causes an electric shock, since the
+      physical earth forms a path between two points of the transformer that otherwise wouldn't exist.
+      In cases where this risk is deemed unacceptable, <a href="#it">isolated</a> supplies may be used, though
+      with noteworthy disadvantages.
+    </p>
+
+    <h3 id="tns">TN-S</h3>
+    <p>
+      In these supplies the earth is provided by the electricity supplier in the form of a separate wire going
+      all the way back to the transformer, where it is connected to the neutral.
+      This system used to be common in the UK until the 70s-80s, where supply cables had a lead outer covering
+      which was used as the protective earth (PE) conductor.
+    </p>
+    <p>
+      The disadvantage of this system is its high cost, as an entirely separate wire must be used just for the
+      earth along the entire lenght of the distribution lines; however it's also very safe, as there's not much
+      that can go wrong with it.
+    </p>
+    <p>
+      Nowdays, it's often found on installations (such as commercial or industrial ones) with their own
+      transformer, as the cost of the additional conductor needed is minimal.
+    </p>
+    <a href="files/images/wiring/earthing_tns.png"><img src="files/images_lowres/wiring/earthing_tns_thumb.png" class="image one" alt="Wiring diagram of a TN-S system: alongside the line and neutral cables, there's also a separate earth cable going to each installation."></a>
+
+    <h3 id="tnc">TN-C</h3>
+    <p>
+      With this system a combined neutral and earth conductor (PEN) is used, serving both the roles of carrying
+      the return current and for the protective earth connection.
+      In a real installation this means either using an appliance with a connection from the neutral to the
+      chassis - necessitating a polarised plug - or, more commonly, having a link behind the socket to bridge
+      the neutral and earth terminals together (in North American terms this is generally referred to as a
+      "bootleg ground").
+    </p>
+    <p>
+      The only advantage of this arrangement is in its very low cost, since no extra wires are needed to add
+      earthing to a circuit.
+      However, there's a significant risk present if the PEN wire becomes broken at any point (even just due
+      to a poor connection) - a situation known as a <b>PEN fault</b>.
+    </p>
+    <p>
+      In this case the neutral wire will rise up to mains voltage, or close to it; this is possible under any
+      supply system, of course, but it's particularly dangerous with TN-C ones since the earth is directly
+      connected to the now-hazardous neutral, leading to any connected metal-cased appliance to become live at
+      a dangerous voltage.
+    </p>
+    <a href="files/images/wiring/earthing_tncs.png"><img src="files/images_lowres/wiring/earthing_tncs_thumb.png" class="image one" alt=""></a>
+    <p>
+      These days this supply type is seldom used outside of power distribution, due to this huge safety risk.
+      However, it was common until the 70s in German-speaking countries using the "bootleg ground" method, a
+      practice referred to as "classical zeroing" (<i lang=de">Klassiche Nullung</i> in German).
+      In the US, TN-C earthing was allowed until the 90s for connecting stoves and dryers, using a "3-wire"
+      (2 phases + PEN) power cord, replacements for which are still readily available.
+    </p>
+
+    <h3 id="tncs">TN-C-S</h3>
+    <p>
+      In this system the power distribution side is still TN-C, and thus there's still a combined protective
+      earth and neutral (PEN) wire. However, it's then split off into separate neutral and earth conductors
+      at a certain point, usually after entering the building, which then never recombine.
+    </p>
+    <p>
+      The location where the split happens varies depending on the country: in Europe it's inside the supply
+      company's cutout (a special type of fuse holder), in North America it's inside the first point of
+      disconnection (typically the breaker panel) using a "bonding screw", while in some other places it may
+      be inside the meter socket <sup>[<a href="">example</a>]</sup>.
+    </p>
+    <a href="files/images/wiring/earthing_tncs.png"><img src="files/images_lowres/wiring/earthing_tncs_thumb.png" class="image one" alt="Wiring diagram of a TN-C-S system: there's a single conductor used as the neutral and earth which splits off at the source of the installation."></a>
+    <p>
+      As the supply side is still TN-C, PEN faults are still a concern: a fallen tree hitting a power line or
+      even just poor maintenance of the infrastructure can pose a serious threat. This is especially true with
+      electrical equipment operated outdoors, where a person is in contact with the "real" earth.
+      To help alleviate these risks, a few measures can be taken: for example, a concentric cable may be used,
+      which makes it difficult to cut the combined neutral and earth connection without also disconnecting the
+      phase(s).
+    </p>
+    <p>
+      The PEN is usually also earthed at multiple points, which may help reduce its voltage in case of a
+      possible PEN fault. The exact implementation of this varies between countries; one solution is to
+      connect earth rods at regular intervals on the distribution lines. Many countries (the UK being
+      a notable exception) also make it mandatory to install earth rods inside the installation.
+    </p>
+    <p>
+      Essentially, TN-C-S supplies are an improvement over TN-C ones, maintaining most of the cost advantage
+      (at least on the distribution side) while helping to lessen (though not eliminate entirely) its
+      considerable safety risks.
+      Because of this, it's become widespread throughout the world, especially in Europe (though not in every
+      country) and in North America, where it's the only type in use.
+    </p>
+
+    <h3 id="tt">TT</h3>
+    <p>
+      On TT supplies, the neutral and earth conductors are always kept separate - the earth connection is
+      provided purely by a local electrode. This means that a short between line and neutral would have a
+      fairly low fault current, as it'd have to pass through the physical soil in order to go back to the
+      transformer.
+    </p>
+    <p>
+      Such an arrangement used to be undesirable before the advent of <a href="safety.html#rcd">RCDs</a>,
+      as the low current produced during a fault wouldn't be enough to cause a fuse or circuit breaker to
+      trip immediately, leaving the faulty appliance powered on and energised.
+    </p>
+    <p>
+      However, thanks to RCDs having become a lot cheaper over time, and nowadays being necessary for most
+      household circuits anyways, regardless of the earthing system in use, the TT system has become much
+      more appealing, as it's as cheap as TN-C-S without suffering from the risk of PEN faults.
+    </p>
+    <p>
+      This system is standard in Denmark, France, Italy, Japan. Additionally, several other countries that
+      normally tend to use the TN system, such as the UK and Australia, make use of it in rural installations,
+      likely due to the distribution lines not being reliable enough for TN-C-S earthing, and TN-S being
+      prohibitively expensive over long distances.
+    </p>
+    <a href="files/images/wiring/earthing_tt.png"><img src="files/images_lowres/wiring/earthing_tt_thumb.png" class="image one" alt="Wiring diagram of a TT system: the earth of the installation is connected purely to an earth electrode and thus fault current has to travel purely through the physical soil."></a>
+
+    <h3 id="it">IT (isolated supplies)</h3>
+    <p>
+      On isolated supplies none of the connections on the transformer are connected to earth at any point,
+      which leads to a lack of a true "line" or "neutral", as under normal circumstances it's impossible to
+      receive an electric shock from touching only one wire.
+    </p>
+    <p>
+      This system is usually found on small generators meant for powering few devices. Larger generators tend
+      to be set up as TN-S and require connecting to an earth rod.
+      They're also used in some special situations, such as hospitals, as a power continuity measure for
+      machines that can't suffer from a power loss. In case of a fault to earth the system essentially turns
+      into a TN system, and a special monitoring device can alert the operator.
+    </p>
+    <p>
+      IT supplies are also very common in Norway, generally on a 127/220V three-phase transformer. This was
+      traditionally considered safer, but an isolated system has the problem of being nearly impossible to
+      keep isolated on a large scale. Additionally, some devices (such as EVSEs) don't work properly with
+      them; this has lead Norway to slowly migrate over to 230/400V TN-C-S supplies like other European
+      countries.
+    </p>
+
+    <hr>
+    <div class="infobar bottom">
+      <b><a href="radial_ring.html">Next page</a>:</b> Radial and ring circuit wiring
+    </div>
+  </div>
+</body>
+</html>
